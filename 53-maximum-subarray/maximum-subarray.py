@@ -4,7 +4,6 @@ class Solution:
         maxx=nums[0]
         for i in nums:
             curr=max(i,curr+i)
-            maxx=max(maxx,curr)
+            maxx=max(curr,maxx)
         return maxx    
-
 
