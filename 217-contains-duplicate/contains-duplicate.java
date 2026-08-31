@@ -3,18 +3,15 @@ import java.util.Map;
 import java.util.*;
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        HashMap<Integer,Integer> map=new HashMap<>();
+        HashSet<Integer> set= new HashSet<>();
 
         for(int c:nums){
-            map.put(c,map.getOrDefault(c,0)+1);
-        }
-        for(int x:map.keySet()){
-            if(map.get(x)>1){
+            if(set.contains(c)){
                 return true;
             }
+            set.add(c);
         }
         return false;
-
         
     }
 }
