@@ -18,7 +18,8 @@ class Solution {
 
         int i=0;
         for(int c:result){
-            ans[i++]=c;
+            ans[i]=c;
+            i++;
         }
         return ans;
     }
