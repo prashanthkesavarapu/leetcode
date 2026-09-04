@@ -13,8 +13,8 @@ class Solution {
                 if(st.isEmpty()){
                     st.push(i);
                     }
-                    else{
-                        count=Math.max(count,i-st.peek());
+                else{
+                    count=Math.max(count,i-st.peek());
                     }
                 }
         }
