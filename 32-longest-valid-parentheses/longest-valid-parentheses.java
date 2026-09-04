@@ -12,8 +12,11 @@ class Solution {
                 st.pop();
                 if(st.isEmpty()){
                     st.push(i);
-                }}
-                count=Math.max(count,i-st.peek());
+                    }
+                else{
+                    count=Math.max(count,i-st.peek());
+                    }
+                }
         }
         return count;
     }
