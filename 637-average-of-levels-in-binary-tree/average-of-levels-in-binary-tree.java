@@ -33,7 +33,8 @@ class Solution {
                 }
                 if(node.right!=null){
                     q.offer(node.right);
-                                }                }
+                }                
+            }
                 res.add(sum/size);
         }
         return res;
