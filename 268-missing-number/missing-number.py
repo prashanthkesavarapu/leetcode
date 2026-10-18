@@ -1,7 +1,6 @@
-class Solution:
-    def missingNumber(self, nums: List[int]) -> int:
-        summ=sum(nums)
+class Solution(object):
+    def missingNumber(self, nums):
+        a=sum(nums)
         n=len(nums)
-        fac=n*(n+1)//2
-        return fac-summ
-        
+        actual=n*(n+1)//2 -a
+        return actual
